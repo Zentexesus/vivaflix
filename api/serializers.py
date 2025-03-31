@@ -78,12 +78,6 @@ class MovieSerializer(serializers.ModelSerializer):
             return request.build_absolute_uri(obj.image_url)
         return None
 
-
-class WatchlistSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Watchlist
-        fields = '__all__'
-
 class CollectionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Collection
